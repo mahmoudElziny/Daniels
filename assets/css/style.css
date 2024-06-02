@@ -1,0 +1,138 @@
+* {
+    outline: none;
+    scroll-padding-top: 3.125rem;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat' 'sans-serif';
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ^Navbar style */
+.navbar-logo {
+    font-family: 'Montserrat' 'sans-serif';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #343434;
+}
+
+.nav-item {
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-inline: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    color: #111;
+    padding: 0;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #343434;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* ^home section style */
+.home {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)) , url(../images/bg.jpg);
+    background-size: cover;
+}
+
+.home-content h4 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.home-content h2 {
+    white-space: nowrap;
+    font-size: 60px;
+    font-weight: 200;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+}
+
+.home-content-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 35px;
+}
+
+.home-content-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.home-content-words {
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 500;
+    transition: all 0.3s ease ;
+    animation: change-width 7s 1s infinite;
+}
+
+.home-content-words::after {
+    content: " Larry Daniels";
+    animation: change-word 7s 1s ease infinite;
+}
+
+@keyframes change-width {
+    0%,30%,60%,100% {
+        width: 100%;
+    }
+
+    15%,45%,75% {
+        width: 0%;
+    }
+}
+
+@keyframes change-word {
+    0%, 99%, 100% {
+        content: " Larry Daniels";
+    }
+    40% {
+        content: " Developer";
+    }
+    60% {
+        content: " Designer";
+    }
+}
