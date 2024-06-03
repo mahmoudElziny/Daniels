@@ -59,7 +59,7 @@ ul {
 }
 
 
-/* ^home section style */
+/* *home section style */
 .home {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)) , url(../images/bg.jpg);
@@ -135,4 +135,92 @@ ul {
     60% {
         content: " Designer";
     }
+}
+
+
+/* *About section style */
+
+.about-image-margin {
+    margin-left: 50px;
+}
+
+.about-img img {
+    padding: 0 0 0 30px;
+}
+
+.about-img::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 0;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -2;
+}
+
+.about h3 {
+    color: #1c1c1c;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    color: #999;
+    font-size: 14px;
+}
+
+.about-content {
+    color:#748182 ;
+}
+
+.progress {
+    height: 25px;
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    background-color: #1c1c1c;
+}
+
+.skills {
+   margin-block: 40px;
+}
+
+.progress-desc {
+    font-family: 'Montserrat' 'sans-serif';
+    font-size: 13px;
+}
+
+.btn-custom-black {
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    padding-inline: 30px;
+    transition:  all .3s;
+}
+
+.btn-custom-black:hover {
+    background-color: white;
+    border: #1c1c1c 1px solid;
+    color: black;
+}
+
+.btn-custom-white {
+    background-color: white;
+    color: black;
+    border: #1c1c1c 1px solid;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    padding-inline: 30px;
+    transition:  all .3s;
+}
+
+.btn-custom-white:hover {
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
 }
