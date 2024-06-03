@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Montserrat' 'sans-serif';
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -21,7 +21,39 @@ ul {
     list-style-type: none;
 }
 
-/* ^Navbar style */
+.main-title {
+    text-align: center; 
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.main-title h2 {
+    font-weight: 900;
+    font-size: 40px;
+    color: #323232;
+}
+
+.main-title::after {
+    content: "";
+    background-image: url(../images/dots.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0%; 
+    z-index: -2;
+}
+
+.bg-gray {
+    background: #f7f7f7;
+}
+
+/* *Navbar style */
 .navbar-logo {
     font-family: 'Montserrat' 'sans-serif';
     font-weight: 700;
@@ -223,4 +255,29 @@ ul {
     background-color: #1c1c1c;
     color: white;
     border: none;
+}
+
+/* *Services section style */
+.services-item {
+    flex-direction: column;
+    border-radius: 8px;
+    padding-inline: 39px;
+    text-align: center;
+}
+
+.services-item p {
+    color: #748182;
+    font-size: 14px;
+}
+
+.services-icon {
+    color: black;
+    width: 75px;
+    height: 75px;
+    transition: all .3s;
+}
+
+.services-icon:hover {
+   background-color: black;
+   color: white;
 }
