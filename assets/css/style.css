@@ -171,6 +171,9 @@ ul {
 
 
 /* *About section style */
+.about .container {
+    width: 80%;
+}
 
 .about-image-margin {
     margin-left: 50px;
@@ -258,6 +261,10 @@ ul {
 }
 
 /* *Services section style */
+.services .container {
+    width: 75%;
+}
+
 .services-item {
     flex-direction: column;
     border-radius: 8px;
@@ -284,6 +291,10 @@ ul {
 
 
 /* *Portfolio section style */
+.portfolio .container {
+  width: 75%;
+}
+
 .nav-tabs {
     display: flex;
     margin-bottom: 30px;
