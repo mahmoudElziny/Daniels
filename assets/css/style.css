@@ -392,6 +392,18 @@ ul {
     opacity: 1;
 }
 
+/* *Counter section style */
+.content {
+    padding-block: 80px;
+}
+
+.icon p {
+    color: #748182;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
 /* *Team section style */
 .team-card-layer {
     background-color: white;
