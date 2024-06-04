@@ -359,3 +359,38 @@ ul {
 .portfolio-card:hover .portfolio-layer>* {
     margin: 0;
 }
+
+/* *Testimonial section style */
+.carousel-inner img {
+    width: 85px;
+    height: 85px;
+}
+
+.carousel-inner blockquote {
+    color: #888;
+}
+
+.carousel-inner span {
+    font-size: 12px;
+    letter-spacing: 0.3;
+    color: #888;
+    font-weight: 600;
+}
+
+.carousel-indicators [data-bs-target] {
+    all: unset;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+    opacity: 0.5;
+    margin-inline: 6px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+
+
