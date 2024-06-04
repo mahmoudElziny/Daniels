@@ -498,3 +498,17 @@ ul {
     background-color: #eee;
 
 }
+
+/* *Footer section style */
+footer {
+    background-color: #1c1c1c;
+    margin-top: 40px;
+}
+
+footer p{
+    color: #748182;
+    padding: 35px;
+    font-size: 13px;
+    margin-block-end: 0em;
+}
+
